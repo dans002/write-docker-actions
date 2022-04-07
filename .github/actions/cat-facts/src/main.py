@@ -1,18 +1,18 @@
-import request
+import requests
 import random
 import sys
 
 cat_url = "https://cat-fact.herokuapp.com/facts"
-r = request.get(car_url)
+r = requests.get(cat_url)
 r_obj_list = r.json()
 
 fact_list = []
 
-for fact in r_obj_list
+for fact in r_obj_list:
   fact_list.append(fact["text"])
   
-def select_random_fact(fact_list):
-  return fact_arr[random.randint(0, len(fact_list)+1)]
+def select_random_fact(fact_arr):
+  return fact_arr[random.randint(0, len(fact_arr)-1)]
 
 random_fact = select_random_fact(fact_list)
 
