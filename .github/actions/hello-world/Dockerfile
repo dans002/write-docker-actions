@@ -1,0 +1,6 @@
+from golang:1.15
+workdir /go/src/hello
+copy . .
+run go get -d -v ./...
+run go install -v ./...
+cmd ["hello"]
