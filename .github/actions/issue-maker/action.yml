@@ -17,6 +17,6 @@ iputs:
     description: "Authentication token, use secretes.GITHUB_TOKEN"
     required: true
     
-  runs:
-    using: "docker"
-    image: "Dockerfile"
+runs:
+  using: "docker"
+  image: "Dockerfile"
