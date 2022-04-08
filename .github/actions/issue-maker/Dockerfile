@@ -1,5 +1,5 @@
 from node:slim
-copy pacakge*.json ./
+copy package*.json ./
 run npm install
 copy . .
 cmd ["node", "/src/index.js"]
